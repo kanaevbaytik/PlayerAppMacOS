@@ -6,17 +6,25 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		CEA6413C2E316BEF00261576 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA641342E316BEF00261576 /* AppDelegate.swift */; };
+		CEA6413D2E316BEF00261576 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA641362E316BEF00261576 /* main.swift */; };
+		CEA6413E2E316BEF00261576 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA641382E316BEF00261576 /* PlayerViewController.swift */; };
+		CEA6413F2E316BEF00261576 /* TrackListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA641392E316BEF00261576 /* TrackListViewController.swift */; };
+		CEA641462E316BEF00261576 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA641352E316BEF00261576 /* Assets.xcassets */; };
+		CEA641492E316BFC00261576 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA641482E316BFC00261576 /* Track.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		CEA6410B2E315A1400261576 /* MediaPlayerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediaPlayerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA641342E316BEF00261576 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEA641352E316BEF00261576 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEA641362E316BEF00261576 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		CEA641372E316BEF00261576 /* MediaPlayerApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MediaPlayerApp.entitlements; sourceTree = "<group>"; };
+		CEA641382E316BEF00261576 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		CEA641392E316BEF00261576 /* TrackListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackListViewController.swift; sourceTree = "<group>"; };
+		CEA641482E316BFC00261576 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		CEA6410D2E315A1400261576 /* MediaPlayerApp */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = MediaPlayerApp;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CEA641082E315A1400261576 /* Frameworks */ = {
@@ -32,7 +40,7 @@
 		CEA641022E315A1400261576 = {
 			isa = PBXGroup;
 			children = (
-				CEA6410D2E315A1400261576 /* MediaPlayerApp */,
+				CEA6413B2E316BEF00261576 /* MediaPlayerApp */,
 				CEA6410C2E315A1400261576 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +51,28 @@
 				CEA6410B2E315A1400261576 /* MediaPlayerApp.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		CEA6413B2E316BEF00261576 /* MediaPlayerApp */ = {
+			isa = PBXGroup;
+			children = (
+				CEA641472E316BF400261576 /* Models */,
+				CEA641342E316BEF00261576 /* AppDelegate.swift */,
+				CEA641352E316BEF00261576 /* Assets.xcassets */,
+				CEA641362E316BEF00261576 /* main.swift */,
+				CEA641372E316BEF00261576 /* MediaPlayerApp.entitlements */,
+				CEA641382E316BEF00261576 /* PlayerViewController.swift */,
+				CEA641392E316BEF00261576 /* TrackListViewController.swift */,
+			);
+			path = MediaPlayerApp;
+			sourceTree = "<group>";
+		};
+		CEA641472E316BF400261576 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CEA641482E316BFC00261576 /* Track.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +89,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				CEA6410D2E315A1400261576 /* MediaPlayerApp */,
 			);
 			name = MediaPlayerApp;
 			packageProductDependencies = (
@@ -109,6 +136,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA641462E316BEF00261576 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA6413C2E316BEF00261576 /* AppDelegate.swift in Sources */,
+				CEA6413D2E316BEF00261576 /* main.swift in Sources */,
+				CEA6413E2E316BEF00261576 /* PlayerViewController.swift in Sources */,
+				CEA6413F2E316BEF00261576 /* TrackListViewController.swift in Sources */,
+				CEA641492E316BFC00261576 /* Track.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +291,6 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -286,7 +318,6 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
